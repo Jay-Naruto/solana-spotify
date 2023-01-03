@@ -1,4 +1,7 @@
-import HomePage from './homepage'
+import Login from '../components/Login'
+import Homepage from './Homepage'
+import Random from './random'
+
 
 export default function Home() {
   return (
@@ -10,8 +13,7 @@ export default function Home() {
         onVolumeChange={e => updateVolume(e)}
         onTimeUpdate={e => updateProgress(e)}
       />
-      <HomePage />
-      {/* temporarily render homepage before you build Login */}
+      <Homepage />
     </div>
   )
 }
